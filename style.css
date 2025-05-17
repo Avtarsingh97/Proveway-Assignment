@@ -1,0 +1,282 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+/* Card Container */
+.card {
+  border: 1px solid #f2f2f2;
+  padding: 40px;
+  width: 460px;
+  height: max-content;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  font-size: 14px;
+}
+
+/* Heading Section */
+.heading {
+  position: relative;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.ruler {
+  width: 100%;
+  border-top: 1px solid rgb(218, 217, 217);
+}
+
+.title {
+  position: absolute;
+  top: -10px;
+  width: fit-content;
+  font-weight: bold;
+  color: #ff6699;
+  background-color: white;
+  padding: 0 8px;
+  font-size: 20px;
+}
+
+/* Option Block */
+.option {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.option input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* Discount Tag */
+.discount {
+  background-color: #ff6699;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 2px;
+  margin-left: 5px;
+}
+
+/* Price Block */
+.price {
+  float: right;
+  text-align: right;
+  margin-left: auto;
+  font-weight: 600;
+}
+
+.price del {
+  color: #aaa;
+  font-weight: normal;
+}
+
+/* Unit Heading */
+.unit1-heading {
+  display: flex;
+  flex-direction: column;
+  line-height: 20px;
+}
+
+.unit1-heading span {
+  font-weight: bold;
+}
+
+.unit1-heading p {
+  margin: 0;
+}
+
+/* Popular Tag */
+.popular-tag {
+  position: relative;
+  z-index: 10;
+}
+
+.most-popular {
+  position: absolute;
+  top: -10px;
+  right: 5px;
+  background-color: #ff6699;
+  color: white;
+  padding: 4px 6px;
+  border-radius: 0 0 5px 5px;
+  z-index: 10;
+}
+
+.most-popular::after,
+.most-popular::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 9px;
+  background-color: #D7445B;
+  top: 0;
+  z-index: -1;
+}
+
+.most-popular::after {
+  left: -5px;
+  clip-path: polygon(50% 0%, 0% 100%, 50% 100%);
+}
+
+.most-popular::before {
+  right: -5px;
+  clip-path: polygon(50% 0%, 50% 100%, 100% 100%);
+}
+
+
+
+
+/* Size and Color Selector */
+.size-color {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.size-color select {
+  width: 30%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Summary Section */
+.summary {
+  text-align: right;
+  width: fit-content;
+}
+
+/* Pricing Section */
+.pricing-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pricing-section #total {
+  font-weight: bold;
+}
+
+/* Delivery Info */
+.delivery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #ff6699;
+}
+
+.delivery>span {
+  color: #ff6699;
+  text-align: left;
+}
+
+/* Button */
+.btn {
+  background-color: #ff6699;
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #fd4a86;
+}
+
+/* Powered Text */
+.powered {
+  color: #aaa;
+  text-align: right;
+  margin-top: 10px;
+  font-style: italic;
+  font-size: 10px;
+}
+
+/* Accordion Section */
+.accordion-item {
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.accordion-item.active {
+  background-color: #FFF9FA;
+  border: 2px solid #ff4d88;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.accordion-item.active:checked {
+  border: 1px solid #ff6699;
+}
+
+
+.accordion-header {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  z-index: 20;
+}
+
+.accordion-content {
+  padding: 10px 15px;
+  display: none;
+  font-size: 10px;
+}
+
+.accordion-item.active .accordion-content {
+  display: block;
+}
+
+/* Size Table */
+.size-table {
+  width: 70%;
+  border-collapse: collapse;
+}
+
+.size-table th,
+.size-table td {
+  padding: 2px;
+  text-align: left;
+  vertical-align: middle;
+  width: fit-content;
+}
+
+.size-table select {
+  width: 70%;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.size-table thead {
+  font-weight: bold;
+}
+
+.accordion-content select {
+  font-size: 10px;
+}
+
+/* Content Heading */
+.content-heading {
+  display: flex;
+  gap: 60px;
+  margin-left: 20px;
+}

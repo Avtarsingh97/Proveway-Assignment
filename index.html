@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic Meta Configuration -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOGO Offer</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Main Offer Card Container -->
+    <div class="card">
+
+      <!-- Header Section -->
+      <div class="heading">
+        <div class="ruler"></div>
+        <div class="title">YAY! It's BOGO</div>
+      </div>
+
+      <!-- Option 1: Single Unit Option -->
+      <div class="accordion-item">
+        <!-- Radio Button Header -->
+        <div class="accordion-header">
+          <input type="radio" name="unit" value="1" data-price="10" checked />
+          <div class="unit1-heading">
+            <span>1 Unit <span class="discount">10% Off</span></span>
+            <p class="">Standard Price</p>
+          </div>
+          <div class="price">$10.00 USD<br /><del>$24.00 USD</del></div>
+        </div>
+
+        <!-- Collapsible Content: Size and Colour Selection -->
+        <div class="accordion-content">
+          <table class="size-table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Size</th>
+                <th>Colour</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Product #1 -->
+              <tr>
+                <td>#1</td>
+                <td>
+                  <select>
+                    <option value="s" selected>S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                  </select>
+                </td>
+                <td>
+                  <select>
+                    <option selected disabled>Colour</option>
+                    <option value="black">Black</option>
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                  </select>
+                </td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Option 2: Two Units (Most Popular) -->
+      <div class="accordion-item popular-tag">
+        <!-- Popular Tag -->
+        <span class="most-popular">MOST POPULAR</span>
+
+        <!-- Radio Button Header -->
+        <div class="accordion-header tagged">
+          <input type="radio" name="unit" value="2" data-price="18" />
+          <div class="unit1-heading">
+            <span>2 Unit <span class="discount">20% Off</span></span>
+          </div>
+          <div class="price">$18.00 USD<br /><del>$24.00 USD</del></div>
+        </div>
+
+        <!-- Collapsible Content: Size and Colour Selection -->
+        <div class="accordion-content">
+          <table class="size-table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Size</th>
+                <th>Colour</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Product #1 -->
+              <tr>
+                <td>#1</td>
+                <td>
+                  <select>
+                    <option value="s" selected>S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                  </select>
+                </td>
+                <td>
+                  <select>
+                    <option selected disabled>Colour</option>
+                    <option value="black">Black</option>
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                  </select>
+                </td>
+              </tr>
+              <!-- Product #2 -->
+              <tr>
+                <td>#2</td>
+                <td>
+                  <select>
+                    <option value="s" selected>S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                  </select>
+                </td>
+                <td>
+                  <select>
+                    <option selected disabled>Colour</option>
+                    <option value="black">Black</option>
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                  </select>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Option 3: Three Units -->
+      <div class="accordion-item">
+        <!-- Radio Button Header -->
+        <div class="accordion-header">
+          <input type="radio" name="unit" value="3" data-price="24" />
+          <div class="unit1-heading">
+            <span>3 Unit <span class="discount">30% Off</span></span>
+          </div>
+          <div class="price">$24.00 USD<br /><del>$24.00 USD</del></div>
+        </div>
+
+        <!-- Collapsible Content: Size and Colour Selection -->
+        <div class="accordion-content">
+          <table class="size-table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Size</th>
+                <th>Colour</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Product #1 -->
+              <tr>
+                <td>#1</td>
+                <td>
+                  <select>
+                    <option value="s" selected>S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                  </select>
+                </td>
+                <td>
+                  <select>
+                    <option selected disabled>Colour</option>
+                    <option value="black">Black</option>
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                  </select>
+                </td>
+              </tr>
+              <!-- Product #2 -->
+              <tr>
+                <td>#2</td>
+                <td>
+                  <select>
+                    <option value="s" selected>S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                  </select>
+                </td>
+                <td>
+                  <select>
+                    <option selected disabled>Colour</option>
+                    <option value="black">Black</option>
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                  </select>
+                </td>
+              </tr>
+              <!-- Product #3 -->
+              <tr>
+                <td>#3</td>
+                <td>
+                  <select>
+                    <option value="s" selected>S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                  </select>
+                </td>
+                <td>
+                  <select>
+                    <option selected disabled>Colour</option>
+                    <option value="black">Black</option>
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                  </select>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Pricing and Summary Section -->
+      <div class="pricing-section">
+        <div class="delivery">Free Delivery</div>
+        <div class="summary">Total : <span id="total">$10.00 USD</span></div>
+      </div>
+
+      <!-- Add to Cart Button -->
+      <button class="btn">+ Add to Cart</button>
+
+      <!-- Footer/Attribution -->
+      <div class="powered">@ Powered by Pumper</div>
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
